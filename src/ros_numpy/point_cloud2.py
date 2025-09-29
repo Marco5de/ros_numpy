@@ -49,7 +49,8 @@ DUMMY_FIELD_PREFIX = '__'
 # mappings between PointField types and numpy types
 type_mappings = [(PointField.INT8, np.dtype('int8')), (PointField.UINT8, np.dtype('uint8')), (PointField.INT16, np.dtype('int16')),
                  (PointField.UINT16, np.dtype('uint16')), (PointField.INT32, np.dtype('int32')), (PointField.UINT32, np.dtype('uint32')),
-                 (PointField.FLOAT32, np.dtype('float32')), (PointField.FLOAT64, np.dtype('float64'))]
+                 (PointField.FLOAT32, np.dtype('float32')), (PointField.FLOAT64, np.dtype('float64')), (PointField.INT64, np.dtype('int64')),
+                 (PointField.UINT64, np.dtype('uint64')), (PointField.BOOL, np.dtype('bool'))]
 pftype_to_nptype = dict(type_mappings)
 nptype_to_pftype = dict((nptype, pftype) for pftype, nptype in type_mappings)
 
